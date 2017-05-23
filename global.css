@@ -1,0 +1,26 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+#navbar li {
+    cursor: pointer;
+}
+
+.tabs  {
+    position: relative;
+    top: 50px;
+}
+
+#file_upload {
+    display: block;
+}
+
+#loyalty {
+    display: none;
+}
+
+#egm {
+    display: none;
+}
+
