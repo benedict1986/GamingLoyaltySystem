@@ -1,27 +1,10 @@
-$( document ).ready(function() {
+$( document ).ready(function(){
+    $("#navbar-main").sticky({topSpacing:0});
+    $('#navbar-main').on('sticky-start', function() { $('.navbar-brand').text("Gaming Loyalty System") });
+    $('#navbar-main').on('sticky-end', function() { $('.navbar-brand').text("") });
+    
+    $('#navbar a').offsetScroller({offsetPixels: 0, animationSpeed: 500});
+    $().offsetScroller.scrollToHash(window.location.hash, {offsetPixels: 92});
+    
 });
-
-
-
-
-function menuClick(item)
-{
-    if (item === 'Loyalty')
-    {
-        $('#loyalty').css('display', 'block');
-        $('#egm').css('display', 'none');
-        $('#file_upload').css('display', 'none');
-    } else if (item === 'EGM')
-    {
-        $('#loyalty').css('display', 'none');
-        $('#egm').css('display', 'block');
-        $('#file_upload').css('display', 'none');
-    } else if (item === 'FileUpload')
-    {
-        $('#loyalty').css('display', 'none');
-        $('#egm').css('display', 'none');
-        $('#file_upload').css('display', 'block');
-    }
-}
-
 

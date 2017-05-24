@@ -23,4 +23,10 @@ class EGMModel {
     var $revenue;
     var $theme;
 
+    
+    public function insertItem($table, $data_adapter)
+    {
+        $sql = "INSERT INTO \"{$table}\"  (id, floor_position, game_number, serial, denomination, date, turnover, revenue, theme) VALUES ({$this->id}, {$this->floor_position}, {$this->game_number}, {$this->serial}, {$this->denomination}, to_date('{$this->date}', 'DD/MM/YYYY'), {$this->turnover}, {$this->revenue}, {$this->theme})";
+        $data_adapter->insert($sql);
+    }
 }

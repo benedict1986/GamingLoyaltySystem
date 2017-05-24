@@ -44,5 +44,4 @@ class DatabaseAdapter {
         $result = pg_query($this->connection, $sql);
         return  pg_fetch_all($result); 
     }
-
 }

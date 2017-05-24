@@ -1,26 +1,18 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-}
-
-#navbar li {
-    cursor: pointer;
-}
-
-.tabs  {
-    position: relative;
-    top: 50px;
-}
-
-#file_upload {
-    display: block;
-}
-
-#loyalty {
-    display: none;
-}
-
-#egm {
-    display: none;
+#navbar-main {
+  /* Added `.affix-top` class css when the element is top */
+  &.affixed-top {
+    background: black;
+  }
+  /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */
+  &.affix {
+    background: gray;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  /* Added `.affix-bottom` class css when the element is footer */
+  &.affix-bottom {
+    background: red; 
+  }
 }
 
